@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATM Application</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="atm">
+        <div class="screen">
+            <div id="screen-content">
+                <h1 style="color: white;">Welcome to ATM</h1>
+                <button onclick="showOpenAccount()">Open Account</button>
+                <button onclick="showDeposit()">Deposit</button>
+                <button onclick="showWithdraw()">Withdraw</button>
+                <button onclick="showDisplay()">Display Account Details</button>
+                <button onclick="showSearch()">Search for Account</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for messages -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="modal-message"></p>
+        </div>
+    </div>
+
+    <script src="/js/scripts.js"></script>
+</body>
+</html>
